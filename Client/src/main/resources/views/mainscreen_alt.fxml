@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #00FF7F;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.MainController_alt">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" />
+    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="832.0000244140625" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="303.1999755859374" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="235.60001220703123" minHeight="8.800012588500977" prefHeight="63.6" vgrow="NEVER" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="642.0" valignment="BOTTOM" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="63.6" minHeight="63.6" prefHeight="63.6" prefWidth="200.0" style="-fx-background-color: #00cc44;">
+         <children>
+            <Label fx:id="name" layoutX="50.0" layoutY="5.0" prefHeight="30.0" prefWidth="230.0" text="Name">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="39.0" prefHeight="21.0" prefWidth="102.0" text="eTokens">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="score" layoutX="228.0" layoutY="33.0" prefHeight="34.0" prefWidth="147.0" text="0">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Circle fill="#2e8b70" layoutX="27.0" layoutY="29.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="375.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="234.8" minHeight="10.0" prefHeight="234.8" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="415.79998779296875" minHeight="10.0" prefHeight="339.3999633789063" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.8000549316406" minHeight="10.0" prefHeight="86.20001220703125" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="homeButton" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToHomePane" prefHeight="60.0" prefWidth="481.0" style="-fx-background-color: #00FF7F; -fx-border-color: #2E8B70; -fx-border-width: 2;" text="Home" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Button fx:id="logsButton" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToLogsPane" prefHeight="60.0" prefWidth="478.0" style="-fx-background-color: #00FF7F; -fx-border-color: #2E8B70; -fx-border-width: 2;" text="Logs" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Button fx:id="socialButton" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToSocialPane" prefHeight="60.0" prefWidth="542.0" style="-fx-background-color: #00FF7F; -fx-border-color: #2E8B70; -fx-border-width: 2;" text="Social" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+            <Button fx:id="InfoButton" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToInfoPane" prefHeight="60.0" prefWidth="391.0" style="-fx-background-color: #00FF7F; -fx-border-color: #2E8B70; -fx-border-width: 2;" text="Info" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></Button>
+            <GridPane prefHeight="48.0" prefWidth="526.0" GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="75.00000381469727" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="logoutButton" maxHeight="35.0" maxWidth="139.0" minHeight="35.0" minWidth="55.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="139.0" text="Logout" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" />
+                     </GridPane.margin></Button>
+                  <Button fx:id="optionsButton" maxHeight="35.0" maxWidth="143.0" minHeight="35.0" minWidth="55.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="143.0" text="Options" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="150.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <ListView fx:id="leaderboardListView" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00FF7F;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2E8B70;" GridPane.columnIndex="1" GridPane.vgrow="NEVER" />
+      <Label fx:id="mainLabel" alignment="CENTER" text="History" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="NEVER">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2E8B57;" GridPane.columnIndex="2" />
+      <Label alignment="CENTER" prefHeight="147.0" prefWidth="312.0" text="Leaderboard" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="NEVER">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <StackPane fx:id="mainPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #00802b;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ListView fx:id="historyListView" prefHeight="701.0" prefWidth="758.0" style="-fx-background-color: #4EEE96;" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
