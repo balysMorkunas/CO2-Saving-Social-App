@@ -1,3 +1,8 @@
+## Viridi
+
+Project was created during first year of Computer Science bachelor using Java, Spring, MySQL.
+Aims to reduce carbon footprint with social-media.
+
 ## How to import into your IDE
 
 [Eclipse](http://javapapers.com/java/import-maven-project-into-eclipse/)
